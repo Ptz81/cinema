@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Кінозал</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1 class="header__title">Кінозал</h1>
+    </header>
+    <nav class="sort" id="sort">
+        <div class="burger" onclick="toggleMobileMenu()">
+            <div class="burger__bar"></div>
+            <div class="burger__bar"></div>
+            <div class="burger__bar"></div>
+        </div>
+        <span class="sort__label">
+            Сортувати за:
+        </span>
+        <a class="sort__item" href="#">Назва</a>
+        <a class="sort__item" href="#">Дата виходу</a>
+    </nav>
+    <aside class="sidebar">
+        Бокова панель
+    </aside>
+    <main class="content">
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">Думки мої тихі</h2>
+                <span class="card__info">2019 - 1 год 34 хв</span>
+            </header>
+            <section class="card__content">
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto magnam nam tenetur quas. 
+                    Voluptate omnis magnam porro accusantium corrupti commodi ducimus qui delectus, vitae iste suscipit assumenda, officiis dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam distinctio quis beatae labore, dicta qui ea ullam mollitia, assumenda iste ipsam suscipit tenetur aperiam id eius iure ipsum, aspernatur omnis?</p>
+                <hr>
+                <p>Режисер: Антоніо Лукіч</p>
+            </section>
+        </article>
+
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">Думки мої тихі</h2>
+                <span class="card__info">2019 - 1 год 34 хв</span>
+            </header>
+            <section class="card__content">
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto magnam nam tenetur quas. 
+                    Voluptate omnis magnam porro accusantium corrupti commodi ducimus qui delectus, vitae iste suscipit assumenda, officiis dolorem.</p>
+                <hr>
+                <p>Режисер: Антоніо Лукіч</p>
+            </section>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">Думки мої тихі</h2>
+                <span class="card__info">2019 - 1 год 34 хв</span>
+            </header>
+            <section class="card__content">
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto magnam nam tenetur quas. 
+                    Voluptate omnis magnam porro accusantium corrupti commodi ducimus qui delectus, vitae iste suscipit assumenda, officiis dolorem.</p>
+                <hr>
+                <p>Режисер: Антоніо Лукіч</p>
+            </section>
+        </article>
+        <article class="card">
+            <header class="card__header">
+                <h2 class="card__title">Думки мої тихі</h2>
+                <span class="card__info">2019 - 1 год 34 хв</span>
+            </header>
+            <section class="card__content">
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iusto magnam nam tenetur quas. 
+                    Voluptate omnis magnam porro accusantium corrupti commodi ducimus qui delectus, vitae iste suscipit assumenda, officiis dolorem.</p>
+                <hr>
+                <p>Режисер: Антоніо Лукіч</p>
+            </section>
+        </article>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+    </div>
+    <script type="text/javascript">
+    const nav = document.getElementById ('sort');
+
+    function toggleMobileMenu () {
+        nav.classList.toggle ('open');
+    }
+    </script>
+</body>
+</html>
