@@ -26,7 +26,7 @@ const movies = [{
     //     <hr>
     //     <p>Режисер: Антоніо Лукіч</p>
     // </section>
-
+//1 version
 function createContent(movies) {
 
     //card
@@ -72,6 +72,31 @@ function createContent(movies) {
     return article;
 
 }
+// 2 version
+
+function createContentTempleate(movies) {
+    const article = ` <article class="card">
+            <header class="card__header" style = 'background-image: url(${movies.image})'>
+                <h2 class="card__title">${movies.title}</h2>
+                <span class="card__info">${movies.date} - ${movies.duration}</span>
+            </header>
+            <section class="card__content">
+                <p class="card__description">${movies.description}</p>
+                <hr>
+                <p>Режисер: ${movies.director}</p>
+            </section>
+        </article>`;
+    
+    return createFragmentTemplate(article);
+}
+
+function createFragmentTemplate(str) {
+    const template = document.createElement('template');
+    template.innerHTML = str;
+    return template.content;
+}
+
+//1 version
 
 function appendContent(content) {
     const el = document.getElementById('content');
@@ -82,7 +107,7 @@ function init(movies) {
     const fragment = document.createDocumentFragment();
 
     movies.forEach((movies) => {
-        fragment.appendChild(createContent(movies));
+        fragment.appendChild(createContentTempleate(movies)); //here was changed createContent into createContentTemplate to run 2 version.
     });
 
     appendContent(fragment);
